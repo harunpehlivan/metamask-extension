@@ -62,7 +62,8 @@
     "https://*.infura.io/"
   ],
   "web_accessible_resources": [
-    "inpage.js"
+    "inpage.js",
+    "inpage-web3.js"
   ],
   "externally_connectable": {
     "matches": [
