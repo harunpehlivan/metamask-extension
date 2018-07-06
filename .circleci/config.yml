@@ -103,6 +103,9 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ .Revision }}
       - run:
+          name: Install npm 6
+          command: sudo npm install -g npm@6.1.0
+      - run:
           name: Install deps via npm
           command: npm ci
       - save_cache:
